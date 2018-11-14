@@ -1,4 +1,5 @@
 ## Differential Privacy
+### Code
 
 Presenter: Tai Yang
 
@@ -18,7 +19,6 @@ Package: diffpriv
 
 - Laplace Privatization of Sample Mean
 - Random DP with Exponential Mechanism
-- DP with the Bernstein Mechanism
 
 @olend
 
@@ -47,7 +47,7 @@ cat("Private response r$response:", r$response,
 @[2](Target function)
 @[3-5](Generate data)
 @[6-11](Privatize the data)
-@[12-13](Private response: h, Non-private f\(D\) maximizer: e)
+@[12-13](Private response r$response: 0.4593619, Non-private response f\(D\): 0.4761788)
 
 
 ---?color=lavender
@@ -64,7 +64,7 @@ D <- c("Michael Jordan", "Andrew Ng", "Andrew Zisserman",
 "Scott Shenker", "Bernhard Scholkopf", "Jon Kleinberg",
 "Judea Pearl")
 n <- length(D)
-f <- function(X) {
+f <- function(X) { ## target function
     function(r) sum(r == unlist(base::strsplit(X, "")))
 }
 ## the response set, letters a--z, must be a list
@@ -82,11 +82,12 @@ cat("Private response r$response: ",
     letters[which.max(sapply(rSet, f(D)))])
 ```
 
-@[1-3](Define oracle for sensitivity sampler)
 @[4-8](Sensitive data)
 @[9-11](Target function)
 @[12-13]
 @[14-20](Privatize the data)
+@[1-3](Define oracle for sensitivity sampler)
+@[1-3,16-17](Sampler)
 @[21-24](Private response r$response: e, Non-private f\(D\) maximizer: e)
 
 ---
@@ -104,3 +105,7 @@ $A'$ replace a 0 of $A$ with 1
 @snap[south-east span-48]
 ![estimate](assets/img/estimate.jpeg)
 @snapend
+
+---
+
+### Questions?
