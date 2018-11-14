@@ -83,18 +83,10 @@ $A$ is 100 zeros <br />
 $A'$ replace a zero of $A$ with one
 @snapend
 
-@snap[south]
+@snap[south-west]
 ![gap](assets/img/gap.jpeg width="200")
 @snapend
 
----
-@snap[north]
-## DP Does Work
-
-$A$ is 100 zeros <br />
-$A'$ replace a zero of $A$ with one
-@snapend
-
-@snap[south]
+@snap[south-east]
 ![estimate](assets/img/estimate.jpeg width="200")
 @snapend

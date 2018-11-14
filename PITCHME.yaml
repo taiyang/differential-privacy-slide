@@ -14,7 +14,7 @@ theme-override : template/css/PITCHME.css
 
 footnote : "Differential Privacy -- Group 10"
 
-highlight : atom-one-dark
+highlight : atom-one-light
 
 layout : center
 
