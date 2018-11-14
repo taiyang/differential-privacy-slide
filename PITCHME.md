@@ -43,8 +43,7 @@ cat("Private response r$response:", r$response,
 @[2](Target function)
 @[3-4](Generate data)
 @[5-7](Privatize the data)
-@[8](Private response r$response:  h\
-     Non-private f\(D\) maximizer:  e)
+@[8-9](Private response: h, Non-private f\(D\) maximizer: e)
 
 
 ---
@@ -74,21 +73,23 @@ cat("Private response r$response: ", r$response,
 @[7](Target function)
 @[8]
 @[9-12](Privatize the data)
-@[13-14](Private response r$response:  e\
-Non-private f\(D\) maximizer:  e)
+@[13-14](Private response r$response: e, Non-private f\(D\) maximizer: e)
 
 ---
-
+@snap[north]
 ## DP Does Work
 
 $A$ is 100 zeros
 
 $A'$ replace a zero of $A$ with one
-
-@snap[west span-40]
-![gap](assets/img/gap.jpeg)
 @snapend
 
-@snap[east span-40]
-![estimate](assets/img/estimate.jpeg)
+@snap[south-west span-40]
+![gap](assets/img/gap.jpeg =200x)
+@snapend
+
+---
+
+@snap[south-east span-40]
+![estimate](assets/img/estimate.jpeg =200x)
 @snapend
