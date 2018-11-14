@@ -22,7 +22,7 @@ Package: diffpriv
 
 @olend
 
----?color=lavender
+---
 @title[Laplace Privatization of Sample Mean]
 
 ### Laplace Privatization
@@ -50,7 +50,7 @@ cat("Private response r$response:", r$response,
 @[12-13](Private response r$response: 0.4593619, Non-private response f\(D\): 0.4761788)
 
 
----?color=lavender
+---
 @title[Random DP with Exponential Mechanism]
 
 ### Exponential Mechanism
