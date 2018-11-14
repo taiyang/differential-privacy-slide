@@ -23,7 +23,7 @@ Package: diffpriv
 @olend
 
 ---
-@title [Laplace Privatization of Sample Mean]
+@title[Laplace Privatization of Sample Mean]
 
 ```r
 library(diffpriv)
@@ -41,10 +41,9 @@ cat("Private response r$response:", r$response,
 @[2](Target function)
 @[3-4](Generate data)
 @[5-7](Privatize the data)
-@[8](Private response r$response:  h \n
-Non-private f(D) maximizer:  e)
+@[8](Private response r$response:  h \n Non-private f\(D\) maximizer:  e)
 
 ---
-@title [Random DP with Exponential Mechanism]
+@title[Random DP with Exponential Mechanism]
 
 ---
