@@ -25,6 +25,8 @@ Package: diffpriv
 ---
 @title[Laplace Privatization of Sample Mean]
 
+## Laplace Privatization
+
 ```r
 library(diffpriv)
 f <- function(X) mean(X) ## target function
@@ -41,9 +43,52 @@ cat("Private response r$response:", r$response,
 @[2](Target function)
 @[3-4](Generate data)
 @[5-7](Privatize the data)
-@[8](Private response r$response:  h \n Non-private f\(D\) maximizer:  e)
+@[8](Private response r$response:  h\
+     Non-private f\(D\) maximizer:  e)
+
 
 ---
 @title[Random DP with Exponential Mechanism]
 
+## Random DP with Exponential Mechanism
+
+```r
+library(randomNames) ## a package that generates representative random names
+oracle <- function(n) randomNames(n)
+D <- c("Michael Jordan", "Andrew Ng", "Andrew Zisserman","Christopher Manning",
+       "Jitendra Malik", "Geoffrey Hinton", "Scott Shenker",
+       "Bernhard Scholkopf", "Jon Kleinberg", "Judea Pearl")
+n <- length(D)
+f <- function(X) { function(r) sum(r == unlist(base::strsplit(X, ""))) }
+rSet <- as.list(letters) ## the response set, letters a--z, must be a list
+mechanism <- DPMechExponential(target = f, responseSet = rSet)
+mechanism <- sensitivitySampler(mechanism, oracle = oracle, n = n, gamma = 0.1)
+pparams <- DPParamsEps(epsilon = 1)
+r <- releaseResponse(mechanism, privacyParams = pparams, X = D)
+cat("Private response r$response: ", r$response,
+    "\nNon-private f(D) maximizer: ", letters[which.max(sapply(rSet, f(D)))])
+```
+
+@[1-2](Define oracle for sensitivity sampler)
+@[3-6](Sensitive data)
+@[7](Target function)
+@[8]
+@[9-12](Privatize the data)
+@[13-14](Private response r$response:  e\
+Non-private f\(D\) maximizer:  e)
+
 ---
+
+## DP Does Work
+
+$A$ is 100 zeros
+
+$A'$ replace a zero of $A$ with one
+
+@snap[west span-40]
+![gap](assets/img/gap.jpeg)
+@snapend
+
+@snap[east span-40]
+![estimate](assets/img/estimate.jpeg)
+@snapend
