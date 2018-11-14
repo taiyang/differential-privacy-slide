@@ -22,7 +22,7 @@ Package: diffpriv
 
 @olend
 
----
+---?color=lavender
 @title[Laplace Privatization of Sample Mean]
 
 ## Laplace Privatization
@@ -46,7 +46,7 @@ cat("Private response r$response:", r$response,
 @[8-9](Private response: h, Non-private f\(D\) maximizer: e)
 
 
----
+---?color=lavender
 @title[Random DP with Exponential Mechanism]
 
 ## Random DP with Exponential Mechanism
@@ -79,15 +79,22 @@ cat("Private response r$response: ", r$response,
 @snap[north]
 ## DP Does Work
 
-$A$ is 100 zeros
-
+$A$ is 100 zeros <br />
 $A'$ replace a zero of $A$ with one
 @snapend
 
-@snap[south-west span-40]
+@snap[south]
 ![gap](assets/img/gap.jpeg width="200")
 @snapend
 
-@snap[south-east span-40]
+---
+@snap[north]
+## DP Does Work
+
+$A$ is 100 zeros <br />
+$A'$ replace a zero of $A$ with one
+@snapend
+
+@snap[south]
 ![estimate](assets/img/estimate.jpeg width="200")
 @snapend

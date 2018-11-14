@@ -5,3 +5,17 @@ remote-control-nextkey: 40
 mathjax : TeX-MML-AM_HTMLorMML-full
 
 eager-loading : true
+
+publish : true
+
+theme : simple
+
+theme-override : template/css/PITCHME.css
+
+footnote : "Differential Privacy -- Group 10"
+
+highlight : atom-one-dark
+
+layout : center
+
+transition : none
