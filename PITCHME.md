@@ -1,18 +1,18 @@
-# Differential Privacy
+## Differential Privacy
 
 Presenter: Tai Yang
 
 
 ---
 
-## R in Action
+### R in Action
 
-Software: R
+Software: R <br />
 Package: diffpriv
 
 ---
 
-## Examples
+### Examples
 
 @ol
 
@@ -25,7 +25,7 @@ Package: diffpriv
 ---?color=lavender
 @title[Laplace Privatization of Sample Mean]
 
-## Laplace Privatization
+### Laplace Privatization
 
 ```r
 library(diffpriv)
@@ -49,7 +49,7 @@ cat("Private response r$response:", r$response,
 ---?color=lavender
 @title[Random DP with Exponential Mechanism]
 
-## Random DP with Exponential Mechanism
+### Exponential Mechanism
 
 ```r
 library(randomNames) ## a package that generates representative random names
@@ -77,10 +77,10 @@ cat("Private response r$response: ", r$response,
 
 ---
 @snap[north]
-## DP Does Work
+### DP Does Work
 
 $A$ is 100 zeros <br />
-$A'$ replace a zero of $A$ with one
+$A'$ replace a 0 of $A$ with 1
 @snapend
 
 @snap[south-west]
