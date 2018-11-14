@@ -83,10 +83,10 @@ $A$ is 100 zeros <br />
 $A'$ replace a 0 of $A$ with 1
 @snapend
 
-@snap[south-west]
-![gap](assets/img/gap.jpeg width="200")
+@snap[south-west span-40]
+![gap](assets/img/gap.jpeg)
 @snapend
 
-@snap[south-east]
-![estimate](assets/img/estimate.jpeg width="200")
+@snap[south-east span-40]
+![estimate](assets/img/estimate.jpeg)
 @snapend
