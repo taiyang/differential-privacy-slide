@@ -86,8 +86,8 @@ cat("Private response r$response: ",
 @[9-11](Target function)
 @[12-13]
 @[14-20](Privatize the data)
+@[16-17](Sampler)
 @[1-3](Define oracle for sensitivity sampler)
-@[1-3,16-17](Sampler)
 @[21-24](Private response r$response: e, Non-private f\(D\) maximizer: e)
 
 ---

@@ -8,13 +8,13 @@ eager-loading : true
 
 publish : true
 
-theme : simple
+theme : night
 
 theme-override : template/css/PITCHME.css
 
 footnote : "Differential Privacy -- Group 10"
 
-highlight : atom-one-light
+highlight : atom-one-dark
 
 layout : center
 
