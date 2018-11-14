@@ -85,11 +85,9 @@ $A'$ replace a zero of $A$ with one
 @snapend
 
 @snap[south-west span-40]
-![gap](assets/img/gap.jpeg =200x)
+![gap](assets/img/gap.jpeg width="200")
 @snapend
 
----
-
 @snap[south-east span-40]
-![estimate](assets/img/estimate.jpeg =200x)
+![estimate](assets/img/estimate.jpeg width="200")
 @snapend

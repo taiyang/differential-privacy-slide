@@ -2,4 +2,6 @@ remote-control: true
 remote-control-prevkey: 38
 remote-control-nextkey: 40
 
+mathjax : TeX-MML-AM_HTMLorMML-full
+
 eager-loading : true
