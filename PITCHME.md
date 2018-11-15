@@ -1,7 +1,7 @@
 ## Differential Privacy
 ### Code
 
-Presenter: Tai Yang
+Tai Yang
 
 
 ---
